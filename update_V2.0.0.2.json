@@ -1,8 +1,0 @@
-﻿{
-    "versi_terbaru":  "2.0.0.2",
-    "tanggal_rilis":  "2026-08-27 08.35.07",
-    "url_unduh":  "https://github.com/salman-ir/sheetengine/releases/download/2.0.0.2/Setup_SheetEngine_V2.0.0.2.exe",
-    "sha256":  "972190ee5ea03ae5344954c7062311bd54ade6a34d4cda25a2d748f70d7c0468",
-    "wajib_update":  false,
-    "catatan_rilis":  "Pembaruan sistem keamanan, peningkatan metadata instalasi, dan stabilitas modul analitik Polars/Pandas."
-}
