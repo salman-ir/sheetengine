@@ -1,0 +1,8 @@
+﻿{
+    "versi_terbaru":  "2.0.0.2",
+    "tanggal_rilis":  "2026-08-30 13.37.15",
+    "url_unduh":  "https://github.com/salman-ir/sheetengine/releases/download/2.0.0.2/Setup_SheetEngine_V2.0.0.2.exe",
+    "sha256":  "3597e434ee101c60381516651df22eaa0ae9a575a4a5bf0234d9fc8be7af459b",
+    "wajib_update":  false,
+    "catatan_rilis":  "Pembaruan sistem keamanan, peningkatan instalasi."
+}
