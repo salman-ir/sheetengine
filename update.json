@@ -1,8 +1,8 @@
 ﻿{
     "versi_terbaru":  "3.0.0.0",
-    "tanggal_rilis":  "2026-09-06 20.38.51",
+    "tanggal_rilis":  "2026-09-07 16.19.15",
     "url_unduh":  "https://github.com/salman-ir/sheetengine/releases/download/3.0.0.0/Setup_SheetEngine_V3.0.0.0.exe",
-    "sha256":  "680189d73ae6cb7addc35db2aa12f0dd58f3093ba842f3230c3e8b3804ed1d5c",
+    "sha256":  "a255c014106667d7ba02ee2b6438171e9a82766676517fee87066f9e6776cf3d",
     "wajib_update":  false,
     "catatan_rilis":  "SheetEngine 3 menyatukan penjelajah basis data ke dalam satu aplikasi. Sumber data kini menjadi langkah pertama: berkas Excel, basis data (SQLite, DuckDB, Access, PostgreSQL, MySQL, SQL Server, Oracle), atau tabel dari halaman web - seluruhnya melewati modul analitik, dasbor, dan ekspor yang sama. Koneksi tersimpan beserta kata sandinya dipindahkan otomatis dari OmniData Analytics saat aplikasi pertama kali dibuka. Jejak audit kini ditulis di direktori data pengguna, sehingga tidak lagi berhenti tercatat diam-diam ketika aplikasi terpasang di Program Files."
 }
