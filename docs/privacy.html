@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kebijakan privasi SheetEngine Enterprise.">
+  <title>Kebijakan Privasi | SheetEngine Enterprise</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f7f9fc; color: #172033; }
+    header { border-bottom: 1px solid #dce3ed; background: #ffffff; }
+    header div, main, footer { width: min(880px, calc(100% - 40px)); margin: 0 auto; }
+    header div { padding: 24px 0; }
+    .brand { margin: 0; color: #0969a8; font-size: 1.1rem; font-weight: 700; }
+    nav { display: flex; gap: 20px; margin-top: 14px; }
+    a { color: #0969a8; }
+    main { padding: 42px 0 64px; }
+    section { scroll-margin-top: 20px; }
+    section + section { margin-top: 64px; padding-top: 48px; border-top: 1px solid #dce3ed; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; }
+    h2 { margin-top: 36px; color: #5b2aa8; font-size: 1.25rem; }
+    p, li, td, th { line-height: 1.7; }
+    .date { margin-top: 0; color: #596579; }
+    .summary { font-size: 1.08rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 620px; }
+    th, td { padding: 12px; text-align: left; vertical-align: top; border-bottom: 1px solid #dce3ed; }
+    th { background: #eaf5fb; color: #16384d; }
+    code { font-family: Consolas, monospace; }
+    footer { padding: 24px 0 48px; color: #596579; border-top: 1px solid #dce3ed; }
+    @media (prefers-color-scheme: dark) {
+      :root, body { background: #11151d; color: #e8edf5; }
+      header { background: #171d27; border-color: #30394a; }
+      section + section, footer, th, td { border-color: #30394a; }
+      .brand, a { color: #5bc0eb; }
+      h2 { color: #c29aff; }
+      .date, footer { color: #aeb8c8; }
+      th { background: #182d3a; color: #dbeef8; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="brand">SheetEngine Enterprise</p>
+      <nav aria-label="Pilihan bahasa">
+        <a href="#indonesia">Indonesia</a>
+        <a href="#english">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="indonesia" lang="id">
+      <h1>Kebijakan Privasi</h1>
+      <p class="date">Berlaku sejak 26 September 2026</p>
+      <p class="summary">SheetEngine Enterprise adalah aplikasi desktop untuk
+      mengolah berkas tabular dan sumber basis data. Data yang Anda buka diproses
+      di komputer Anda. Statistik pemakaian hanya dikirim jika Anda sendiri
+      mengaktifkan telemetri opsional.</p>
+
+      <h2>Data yang diproses secara lokal</h2>
+      <p>Berkas yang Anda buka, tabel basis data yang Anda tarik, halaman web yang
+      Anda pindai, hasil perhitungan, dan berkas ekspor diproses pada komputer Anda.
+      SheetEngine tidak mengunggah isi berkas, nama kolom, kueri, hasil perhitungan,
+      maupun kredensial basis data kepada pengembang.</p>
+
+      <h2>Kapan aplikasi memakai jaringan</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Keadaan</th><th>Tujuan</th><th>Data yang dikirim</th></tr></thead>
+          <tbody>
+            <tr><td>Menyambung ke basis data</td><td>Peladen yang Anda tentukan</td><td>Kueri yang Anda jalankan</td></tr>
+            <tr><td>Menarik tabel web</td><td>Alamat yang Anda masukkan</td><td>Permintaan HTTP biasa</td></tr>
+            <tr><td>Memeriksa pembaruan instalasi non-Store</td><td>GitHub</td><td>Permintaan membaca informasi versi</td></tr>
+            <tr><td>Telemetri diaktifkan</td><td>Supabase</td><td>Statistik pseudonim yang dijelaskan di bawah</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Telemetri opsional</h2>
+      <p>Telemetri mati secara bawaan. Jika diaktifkan melalui Pengaturan,
+      aplikasi mengirim sidik SHA-256 pengenal perangkat keras, versi aplikasi,
+      versi dan arsitektur Windows, kapasitas RAM, akumulasi waktu pemakaian,
+      serta waktu terakhir aktif. Nama pengguna dikirim sebagai
+      <code>Anonim</code>; pengenal perangkat keras aslinya tidak dikirim.</p>
+      <p>Telemetri digunakan untuk mengetahui versi yang masih dipakai, mengukur
+      kebutuhan perangkat, dan mendiagnosis masalah rilis. Telemetri dapat
+      dimatikan kembali dari Pengaturan. Pengelola perangkat juga dapat memaksanya
+      mati melalui variabel lingkungan <code>SHEETENGINE_TELEMETRI=0</code>.</p>
+
+      <h2>Jejak audit, cache, dan diagnostik</h2>
+      <p>Jejak audit dan cache disimpan di <code>%LOCALAPPDATA%\SheetEngine</code>
+      dan tidak dikirim otomatis. Laporan diagnostik hanya dibuat ketika Anda
+      memilih mengekspornya. Laporan tersebut menyaring jalur pengguna, alamat
+      email, kata sandi, token, dan kunci API sebelum disimpan.</p>
+
+      <h2>Kredensial basis data</h2>
+      <p>Kata sandi yang Anda pilih untuk disimpan ditempatkan di Windows
+      Credential Manager. Kata sandi tidak ditulis dalam bentuk terbaca ke berkas
+      konfigurasi, jejak audit, atau laporan diagnostik.</p>
+
+      <h2>Penjualan data dan iklan</h2>
+      <p>Kami tidak menjual data pribadi dan tidak menggunakan jaringan iklan.</p>
+
+      <h2>Akses, penghapusan, dan kontak</h2>
+      <p>Kirim pertanyaan privasi serta permintaan akses atau penghapusan data
+      telemetri ke <a href="mailto:salmanir55@outlook.com">salmanir55@outlook.com</a>.
+      Verifikasi tambahan dapat diminta agar data milik orang lain tidak terhapus.</p>
+    </section>
+
+    <section id="english" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective September 26, 2026</p>
+      <p class="summary">SheetEngine Enterprise is a desktop application for
+      processing tabular files and database sources. Files you open are processed
+      on your computer. Usage statistics are sent only if you enable optional
+      telemetry.</p>
+
+      <h2>Locally processed data</h2>
+      <p>Files you open, database tables you retrieve, web pages you scan,
+      calculation results, and exported files are processed on your computer.
+      SheetEngine does not upload file contents, column names, queries,
+      calculation results, or database credentials to the developer.</p>
+
+      <h2>When the app uses the network</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Situation</th><th>Destination</th><th>Data sent</th></tr></thead>
+          <tbody>
+            <tr><td>Connecting to a database</td><td>A server you specify</td><td>Queries that you run</td></tr>
+            <tr><td>Retrieving a web table</td><td>An address you enter</td><td>Ordinary HTTP requests</td></tr>
+            <tr><td>Checking updates for non-Store installations</td><td>GitHub</td><td>A request to read version information</td></tr>
+            <tr><td>Telemetry is enabled</td><td>Supabase</td><td>The pseudonymous statistics described below</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Optional telemetry</h2>
+      <p>Telemetry is off by default. If enabled in Settings, the app sends a
+      SHA-256 fingerprint of a hardware identifier, app version, Windows version
+      and architecture, installed RAM, accumulated usage time, and last-active
+      time. The username field is always <code>Anonymous</code>; the original
+      hardware identifier is never transmitted.</p>
+      <p>Telemetry is used to identify app versions still in use, understand
+      device requirements, and diagnose release problems. You can turn it off in
+      Settings. Device administrators can also force it off with
+      <code>SHEETENGINE_TELEMETRI=0</code>.</p>
+
+      <h2>Audit trail, cache, and diagnostics</h2>
+      <p>The audit trail and cache are stored under
+      <code>%LOCALAPPDATA%\SheetEngine</code> and are not transmitted
+      automatically. A diagnostic report is created only when you choose to
+      export one. User paths, email addresses, passwords, tokens, and API keys
+      are redacted before the report is saved.</p>
+
+      <h2>Database credentials</h2>
+      <p>Passwords that you choose to save are stored in Windows Credential
+      Manager. They are not written in readable form to configuration files,
+      audit trails, or diagnostic reports.</p>
+
+      <h2>Data sales and advertising</h2>
+      <p>We do not sell personal data or use advertising networks.</p>
+
+      <h2>Access, deletion, and contact</h2>
+      <p>Send privacy questions and telemetry access or deletion requests to
+      <a href="mailto:salmanir55@outlook.com">salmanir55@outlook.com</a>.
+      Additional verification may be requested to prevent deletion of another
+      person's data.</p>
+    </section>
+  </main>
+
+  <footer>
+    SheetEngine Enterprise &middot;
+    <a href="https://github.com/salman-ir/sheetengine">Source repository</a>
+  </footer>
+</body>
+</html>
